@@ -28,47 +28,22 @@ class XylophoneApp extends StatelessWidget {
     );
   }
 
-  Expanded buildRow({color1, sound1, color2, sound2}) {
-    return Expanded(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          buildKey(color: color1, sound: sound1),
-          buildKey(color: color2, sound: sound2),
-        ],
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.teal,
-            title: Center(
-              child: Text('My Music'),
-            ),
-          ),
+          backgroundColor: Colors.black,
           body: SafeArea(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                buildRow(
-                    color1: Colors.red,
-                    sound1: 1,
-                    color2: Colors.orange,
-                    sound2: 2),
-                buildRow(
-                    color1: Colors.yellow,
-                    sound1: 3,
-                    color2: Colors.green,
-                    sound2: 4),
-                buildRow(
-                    color1: Colors.blue,
-                    sound1: 5,
-                    color2: Colors.purple,
-                    sound2: 6),
+                buildKey(color: Colors.red, sound: 1),
+                buildKey(color: Colors.orange, sound: 2),
+                buildKey(color: Colors.yellow, sound: 3),
+                buildKey(color: Colors.green, sound: 4),
+                buildKey(color: Colors.blue, sound: 5),
+                buildKey(color: Colors.purple, sound: 6),
               ],
             ),
           ),
