@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256294266185",
+    "project_id": "flash-chat-44364",
+    "storage_bucket": "flash-chat-44364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256294266185:android:646f3bea73e756f411e698",
+        "android_client_info": {
+          "package_name": "com.manav.flash_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB95dkn815pha9mLjKIgVYarLqX27XWz08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
